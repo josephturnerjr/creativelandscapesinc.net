@@ -1,0 +1,49 @@
+@dark: #003540;
+@dark-green: #0D3F40;
+@green: #487360;
+@light-green: #8FA671;
+@tan: #F2D795;
+.masthead{
+  padding: 20px 0 40px 0;
+  h1, p.lead{
+    text-align: center;
+    margin: 20px 0;
+  }
+  background: @dark-green;
+  color: white;
+  border-bottom: 2px solid @dark;
+}
+.testimonials{
+  h2{
+    text-align: center;
+  }
+  padding: 20px 0;
+  .vert-testimonial{
+    text-align: center;
+    img{
+      margin: 20px auto;
+    }
+    .quote{
+      small{
+        display: block;
+        line-height: 20px;
+        color: #999;
+        &:before{
+          content: '\2014 \00A0';
+        }
+      }
+    }
+    .btn{
+      margin: 20px 40px;
+      padding: 10px;
+      background: @light-green;
+    }
+  }
+  .span4{
+    border-left: 1px dashed #ccc;
+    padding: 20px 0 20px 20px;
+    &:first-child{
+      border-left: none;
+    }
+  }
+}

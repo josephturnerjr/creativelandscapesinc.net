@@ -1,0 +1,43 @@
+.masthead {
+  padding: 20px 0 40px 0;
+  background: #0d3f40;
+  color: white;
+  border-bottom: 2px solid #003540;
+}
+.masthead h1,
+.masthead p.lead {
+  text-align: center;
+  margin: 20px 0;
+}
+.testimonials {
+  padding: 20px 0;
+}
+.testimonials h2 {
+  text-align: center;
+}
+.testimonials .vert-testimonial {
+  text-align: center;
+}
+.testimonials .vert-testimonial img {
+  margin: 20px auto;
+}
+.testimonials .vert-testimonial .quote small {
+  display: block;
+  line-height: 20px;
+  color: #999;
+}
+.testimonials .vert-testimonial .quote small:before {
+  content: '\2014 \00A0';
+}
+.testimonials .vert-testimonial .btn {
+  margin: 20px 40px;
+  padding: 10px;
+  background: #8fa671;
+}
+.testimonials .span4 {
+  border-left: 1px dashed #ccc;
+  padding: 20px 0 20px 20px;
+}
+.testimonials .span4:first-child {
+  border-left: none;
+}

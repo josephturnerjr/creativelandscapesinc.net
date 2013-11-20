@@ -9,11 +9,25 @@
   text-align: center;
   margin: 20px 0;
 }
+.masthead img {
+  border: 10px solid white;
+}
+.masthead .main-cta {
+  margin: 20px;
+  display: block;
+  border-radius: 0;
+  color: white;
+  text-shadow: none;
+  background: #ffa459;
+  font-size: 24px;
+  line-height: 40px;
+}
 .testimonials {
   padding: 20px 0;
 }
 .testimonials h2 {
   text-align: center;
+  margin: 20px 0;
 }
 .testimonials .vert-testimonial {
   text-align: center;

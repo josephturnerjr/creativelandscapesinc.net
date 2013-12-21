@@ -25,43 +25,56 @@
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
-    <div id='main-navbar' class="navbar navbar-static-top">
-      <div class="navbar-inner">
+    <div class='overbar'>
       <div class='container'>
-        <a class="brand" href="/">Creative Landscapes</a>
-        <ul class="nav">
+        <a href="/"><img src='/images/sharon.jpg' /></a>
+        <div class='pull-right contact-info'>
+          <address>
+            <strong>Creative Landscapes, Inc.</strong></br>
+            11520 Hwy 17 Bypass<br />
+            Murrells Inlet, SC 29576<br /><br />
+            <strong>Phone:</strong> 843-651-3535<br />
+            <strong>Fax:</strong> 843-651-2748<br />
+            <a href='mailto:sturner1@sccoast.net'>creativelandscapesinc@gmail.com</a><br />
+          </address>
+        </div>
+      <div id='main-navbar' class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <ul class="nav">
             <li><a href="portfolio.html" class="header"> Portfolio</a> </li>
-            <li><a href="request_quote.html" class="header"> Request a Quote</a> </li>
             <li><a href="project_dev.html" class="header"> Project Development</a> </li>
-          <li class='dropdown'>
-            <a class="dropdown-toggle" id="about-drop-label" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
-              About us
-              <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="about-drop-label">
-              <li><a href="services.html" class="header">Services</a> </li>
-              <li><a href="profile.html">
-                Profile
-              </a></li>
-              <li><a href="faq.html" class="header"> FAQ</a> </li>
-              <li><a href="communicate_with.html">
-                Contact us 
-              </a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class='nav pull-right'>
-          <li><a data-toggle='tooltip' data-placement='bottom' title='Find us on Facebook' href="http://www.facebook.com/pages/Creative-Landscapes-Inc/224516841339?ref=ts" class="header"><i class='icon-facebook-sign'></i></a></li>
-          <li><a data-toggle='tooltip' data-placement='bottom' title='Blog' href="http://mblandscapes.wordpress.com/" class="header"><i class='icon-rss'></i></a> </li>
-        </ul>
+            <li class='dropdown'>
+              <a class="dropdown-toggle" id="about-drop-label" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+                About us
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="about-drop-label">
+                <li><a href="services.html" class="header">Services</a> </li>
+                <li><a href="profile.html">
+                  Profile
+                </a></li>
+                <li><a href="faq.html" class="header"> FAQ</a> </li>
+                <li><a href="communicate_with.html">
+                  Contact us 
+                </a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="request_quote.html" class="btn btn-primary pull-right">Request a Quote</a> 
+        </div>
       </div>
       </div>
     </div>
     {{ content }}  
+    <hr />
     <div class='footer'>
       <div class='container'>
-          <p class='pull-left'>Copyright &copy; 2013 Creative Landscapes, Inc.
-          <p class='pull-right'><a href='/contact'>Contact us</a></p>
+          <p class='pull-left'>Copyright &copy; 2013 Creative Landscapes, Inc.</p>
+          <ul class='inline pull-right'>
+            <li><a href='/contact'>Contact us</a></li>
+            <li><a data-toggle='tooltip' data-placement='top' title='Find us on Facebook' href="http://www.facebook.com/pages/Creative-Landscapes-Inc/224516841339?ref=ts" class="header"><i class='icon-facebook-sign'></i></a></li>
+            <li><a data-toggle='tooltip' data-placement='top' title='Blog' href="http://mblandscapes.wordpress.com/" class="header"><i class='icon-rss'></i></a></li>
+          </ul>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -78,7 +91,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-43759501-1', 'yellowcapsoftware.com');
+      ga('create', '', '');
       ga('send', 'pageview');
     </script>
   </body>

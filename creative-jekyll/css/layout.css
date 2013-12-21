@@ -2,3 +2,38 @@ body {
   font-size: 16px;
   line-height: 25.6px;
 }
+.overbar {
+  background: white;
+  padding: 20px 0;
+}
+.overbar .contact-info {
+  text-align: right;
+}
+.overbar .sm-links {
+  font-size: 32px;
+}
+.overbar .sm-links a {
+  text-decoration: none;
+  color: #666;
+}
+.overbar .sm-links a i {
+  margin: 0 20px;
+}
+.overbar .sm-links a:hover {
+  color: #333;
+}
+.overbar address {
+  margin-bottom: 0;
+}
+.navbar {
+  margin: 20px 0 0 0;
+}
+.navbar .nav > li:first-child {
+  margin-left: -15px;
+}
+.navbar .brand {
+  line-height: 20px;
+}
+footer p {
+  margin: 0;
+}

@@ -55,3 +55,6 @@
 .testimonials .span4:first-child {
   border-left: none;
 }
+.service {
+  padding: 30px 0;
+}

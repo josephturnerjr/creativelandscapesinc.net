@@ -1,13 +1,19 @@
 @base-font-size: 16px;
 @cl-green: #3e6534;
+@tan: #d6d3ad;
+@dark-green: #0D3F40;
 body{
   font-size: @base-font-size;
   line-height: @base-font-size * 1.6;
 }
-
-.overbar{
-  background: white;
+h1, h2, h3, h4{
+  color: @cl-green;
+}
+.container{
   padding: 20px 0;
+}
+.overbar{
+  background: lighten(@tan, 15%);
   .contact-info{
     text-align: right;
   }
@@ -27,6 +33,7 @@ body{
   address{
     margin-bottom: 0;
   }
+  border-bottom: 2px solid @cl-green;
 }
 .navbar{
   margin: 20px 0 0 0;
@@ -34,13 +41,20 @@ body{
     margin-left: -15px;
   }
   .navbar-inner{
+    background: @tan;
+    .nav>li>a{
+      color: darken(@tan, 50%);
+    }
+    border: 1px solid darken(@tan, 20%);
   }
   .brand{
     line-height: 20px;
   }
 }
-footer{
-  p{
+.footer{
+  background: lighten(@tan, 15%);
+  border-top: 2px solid @cl-green;
+  p, ul{
     margin: 0;
   }
 }

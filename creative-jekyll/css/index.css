@@ -17,10 +17,13 @@
   border-radius: 0;
   color: white;
   text-shadow: none;
-  background: #B17453;
+  background: #b98265;
   font-size: 24px;
   line-height: 40px;
   border: none;
+}
+.masthead .main-cta:hover {
+  background: #a16849;
 }
 .testimonials {
   padding: 20px 0;

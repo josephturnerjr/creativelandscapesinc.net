@@ -58,3 +58,9 @@ h4 {
 .footer ul {
   margin: 0;
 }
+.btn-primary {
+  background: #7977C2;
+}
+.btn-primary:hover {
+  background: #4c49a3;
+}

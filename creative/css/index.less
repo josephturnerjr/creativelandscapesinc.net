@@ -1,0 +1,75 @@
+// from https://kuler.adobe.com/Copy-of-The-Small-Existence-color-theme-3111208/
+@dark: #003540;
+@dark-green: #0D3F40;
+@green: #487360;
+@light-green: #8FA671;
+@tan: #F2D795;
+@cl-green: #3e6534;
+.masthead{
+  h1, p.lead{
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+  }
+  background: darken(@cl-green, 10%);
+  color: white;
+  img{
+    border: 10px solid white;
+  }
+  .main-cta{
+    margin: 20px;
+    display: block;
+    border-radius: 0;
+    color: white;
+    text-shadow: none;
+    background: lighten(#B17453, 5%);
+    &:hover{
+      background: darken(#B17453, 5%);
+    }
+    font-size: 24px;
+    line-height: 40px;
+    border: none;
+  }
+}
+.testimonials{
+  h2{
+    text-align: center;
+    margin: 20px 0;
+  }
+  padding: 20px 0;
+  .vert-testimonial{
+    text-align: center;
+    img{
+      margin: 20px auto;
+    }
+    .quote{
+      small{
+        display: block;
+        line-height: 20px;
+        color: #999;
+        &:before{
+          content: '\2014 \00A0';
+        }
+      }
+    }
+    .btn{
+      margin: 20px 40px;
+      padding: 10px;
+      background: @light-green;
+    }
+  }
+  .span4{
+    border-left: 1px dashed #ccc;
+    padding: 20px 0 20px 20px;
+    &:first-child{
+      border-left: none;
+    }
+  }
+}
+.services{
+  margin: 20px 0;
+  .service{
+    padding: 30px 0;
+  }
+}
+

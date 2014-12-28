@@ -1,0 +1,85 @@
+---
+layout: blog
+---
+<div id="home">
+  <!-- This loops through the paginated posts -->
+  {% for post in paginator.posts %}
+  <div class='post'>
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p class="author">
+      Posted on <span class="date">{{ post.date|date_to_long_string }}</span> by {{ post.author }}
+    </p>
+    <div class="content">
+      {{ post.content }}
+    </div>
+    <div class="share">
+      <!-- AddToAny BEGIN -->
+      <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_google_plus"></a>
+      <a class="a2a_dd" href="http://www.addtoany.com/share_save?linkurl=http%3A%2F%2Fcreativelandscapesinc.net%2F&amp;linkname="></a>
+      </div>
+      <script type="text/javascript">
+      var a2a_config = a2a_config || {};
+      a2a_config.linkurl = "http://creativelandscapesinc.net{{ post.url }}";
+      </script>
+      <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+      <!-- AddToAny END -->
+    </div>
+    <!-- DISQUS
+    <div class='comment-summary'>
+      <p><a href="{{ post.url }}#disqus_thread">{{ post.title }}</a></p>
+    </div>
+    -->
+  </div>
+  <hr />
+  {% endfor %}
+
+  <!-- Pagination links -->
+  <div id="post-pagination" class="pagination">
+    <ul class="pages">
+      {% if paginator.previous_page %}
+        <li class="previous">
+          {% if paginator.previous_page == 1 %}
+            <a href="/">Previous</a>
+          {% else %}
+            <a href="{{ paginator.previous_page_path }}">Previous</a>
+          {% endif %}
+        </li>
+      {% else %}
+        <li class="previous disabled">
+          <span>Previous</span>
+        </li>
+      {% endif %}
+
+      <li class="page">
+        {% if paginator.page == 1 %}
+          <span class="current-page">1</span>
+        {% else %}
+          <a href="/">1</a>
+        {% endif %}
+      </li>
+
+      {% for count in (2..paginator.total_pages) %}
+        <li class="page">
+          {% if count == paginator.page %}
+            <span class="current-page">{{ count }}</span>
+          {% else %}
+            <a href="/blog/page{{ count }}">{{ count }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <li class="next">
+          <a href="{{ paginator.next_page_path }}">Next</a>
+        </li>
+      {% else %}
+        <li class="next disabled">
+          <span>Next</span>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+</div>

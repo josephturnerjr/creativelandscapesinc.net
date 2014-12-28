@@ -1,0 +1,13 @@
+---
+layout: blog
+---
+<div id="index">
+  <p>Latest Posts</p>
+  {% for post in site.posts %}
+  <p><a class="smaller" href="{{ post.url }}">{{ post.title }}</a><br/>
+    <small class="author smallest">
+      <span class="date">{{ post.date|date_to_string }}</span> - {{ post.author }}
+    </small>
+  </p>
+  {% endfor %}
+</div>

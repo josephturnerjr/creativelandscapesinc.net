@@ -2,6 +2,8 @@
 layout: post
 title: Paver Patio with Firepit in Pawleys Island
 author: Sharon Turner
+facebook:
+    img: /img/heritage/after.jpg
 ---
 
 This landscaping project in Heritage Plantation located in Pawleys

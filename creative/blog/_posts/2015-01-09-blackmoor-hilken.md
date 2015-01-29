@@ -2,6 +2,8 @@
 layout: post
 title: Landscape Design Renovations Improve Curb Appeal in Murrells Inlet, SC
 author: Sharon Turner
+facebook:
+    img: /img/hilken/after1.jpg
 ---
 This appearance of this older home located in the Blackmoor Golf
 community of Murrells Inlet, South Carolina  suffered from poor

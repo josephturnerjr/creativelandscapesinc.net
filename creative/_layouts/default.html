@@ -19,6 +19,11 @@
     {% for sheet in page.stylesheets %}
     <link rel="stylesheet" href="{{sheet}}">
     {% endfor %}
+    {% if page.facebook %}
+      <meta property="og:title" content="{{page.title}}" />
+      <meta property="og:site_name" content="Creative Landscapes" />
+      <meta property="og:image" content="http://{{domain}}{{page.facebook.image}}" />
+    {% endif %}
   </head>
   <body>
     <!--[if lt IE 7]>

@@ -1,5 +1,6 @@
 ---
 layout: blog
+title: Beautiful Landscaping for the Myrtle Beach and Murrells Inlet Area
 ---
 <div id="home">
   <!-- This loops through the paginated posts -->
@@ -7,7 +8,7 @@ layout: blog
   <div class='post'>
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
     <p class="muted">
-      Posted on <span class="date">{{ post.date|date_to_long_string }}</span> by {{ post.author }}
+      Posted on <span class="date">{{ post.date|date: '%B %d, %Y'}}</span> by {{ post.author }}
     </p>
     <div class="content">
       {{ post.content }}

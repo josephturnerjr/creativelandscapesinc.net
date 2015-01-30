@@ -3,8 +3,8 @@ layout: blog
 ---
   <div class='post'>
     <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-    <p class="author">
-      Posted on <span class="date">{{ page.date|date_to_long_string }}</span> by {{ page.author }}
+    <p class="muted">
+      Posted on <span class="date">{{ page.date|date: '%B %d, %Y'}}</span> by {{ page.author }}
     </p>
     <div class="content">
       {{content }}

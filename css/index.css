@@ -1,0 +1,67 @@
+.masthead {
+  background: #294323;
+  color: white;
+}
+.masthead h1,
+.masthead p.lead {
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+.masthead img {
+  border: 10px solid white;
+  box-sizing: border-box;
+}
+.masthead .main-cta {
+  margin: 20px;
+  display: block;
+  border-radius: 0;
+  color: white;
+  text-shadow: none;
+  background: #b98265;
+  font-size: 24px;
+  line-height: 40px;
+  border: none;
+}
+.masthead .main-cta:hover {
+  background: #a16849;
+}
+.testimonials {
+  padding: 20px 0;
+}
+.testimonials h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.testimonials .vert-testimonial {
+  text-align: center;
+}
+.testimonials .vert-testimonial img {
+  margin: 20px auto;
+}
+.testimonials .vert-testimonial .quote small {
+  display: block;
+  line-height: 20px;
+  color: #999;
+}
+.testimonials .vert-testimonial .quote small:before {
+  content: '\2014 \00A0';
+}
+.testimonials .vert-testimonial .btn {
+  margin: 20px 40px;
+  padding: 10px;
+  background: #8fa671;
+}
+.testimonials .span4 {
+  border-left: 1px dashed #ccc;
+  padding: 20px 0 20px 20px;
+}
+.testimonials .span4:first-child {
+  border-left: none;
+}
+.services {
+  margin: 20px 0;
+}
+.services .service {
+  padding: 30px 0;
+}

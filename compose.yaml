@@ -1,0 +1,13 @@
+name: creativelandscapesinc_net
+
+services:
+  creativelandscapesinc_net:
+    build: .
+    restart: unless-stopped
+    networks: 
+      - docklinode
+
+networks:
+  docklinode:
+    name: docklinode
+    external: true
